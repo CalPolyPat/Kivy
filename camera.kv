@@ -1,0 +1,28 @@
+#:kivy 1.0.9
+
+<Overlay>:    
+    canvas:
+        Color:
+            rgba: 1, 1, 1, .5
+        Rectangle:
+            pos: 0, 0
+            size: 20, self.height
+        Rectangle:
+            pos: self.width-20, 0
+            size: 20, self.height
+        Rectangle:
+            pos: 20, 0
+            size: self.width-40, 20
+        Rectangle:
+            pos: 20, self.height-20
+            size: self.width-40, 20
+        Rectangle:
+            pos: self.center_x-20, 20
+            size: 20, self.height-40
+            
+    Label:
+        font_size: 50  
+        center_x: root.center_x
+        bottom: 50
+        font_name: 'times.ttf'
+        text: "Take Picture Inside Gray Border"
